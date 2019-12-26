@@ -1,0 +1,19 @@
+<app-child1 (formulaireOut)="addItemFromChild($event)"></app-child1>
+<div class="row">
+    <table class="table">
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+          </tr>
+          <tr *ngFor="let client of formulaireIn">
+            <td>{{ client.title}}</td>
+            <td>{{ client.first }}</td>
+            <td>{{ client.last }}</td>
+            <td>{{ client.email }}</td>
+            <td>{{ client.password }}</td>
+          </tr>
+      </table>
+</div>
